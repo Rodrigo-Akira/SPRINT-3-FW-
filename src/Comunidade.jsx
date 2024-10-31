@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import mensagensData from '../public/data/mensagensData.json';
 import './Comunidade.css';
-import mensagensData from '../public/data/mensagensData.json'; 
 
 const gruposExemplo = [
-  { id: 1, nome: 'Corridas F1' },
+  { id: 1, nome: 'Corridas Formula E' },
   { id: 2, nome: 'Amigos da Velocidade' },
   { id: 3, nome: 'Campeonatos Regionais' }
 ];
@@ -12,10 +12,17 @@ const Comunidade = () => {
   const [grupoSelecionado, setGrupoSelecionado] = useState(null);
   const [mensagens, setMensagens] = useState({});
   const [novaMensagem, setNovaMensagem] = useState("");
+  const mensagensEndRef = useRef(null);
 
   useEffect(() => {
-    setMensagens(mensagensData); 
+    setMensagens(mensagensData);
   }, []);
+
+  useEffect(() => {
+    if (mensagensEndRef.current) {
+      mensagensEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [mensagens]);
 
   const handleGrupoClick = (grupoId) => {
     setGrupoSelecionado(grupoId);
@@ -60,12 +67,14 @@ const Comunidade = () => {
                   <strong>{mensagem.remetente}:</strong> {mensagem.conteudo}
                 </div>
               ))}
+              <div ref={mensagensEndRef}></div>
             </div>
             <div className="input-container">
               <input
                 type="text"
                 value={novaMensagem}
                 onChange={handleInputChange}
+                onKeyDown={(e) => e.key === 'Enter' && handleEnviarMensagem()}
                 placeholder="Digite sua mensagem..."
               />
               <button onClick={handleEnviarMensagem}>Enviar</button>

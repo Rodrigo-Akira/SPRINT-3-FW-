@@ -3,23 +3,25 @@ html, body {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
 .comunidade-container {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
-    padding-top: 100px; 
-    overflow: hidden; 
+    padding-top: 100px; /* Aumente esse valor se o header for mais alto */
+    overflow: hidden;
 }
 
 .grupos {
     flex: 1;
     background-color: #e0e0e0;
     padding: 10px;
-    overflow-y: hidden; 
-    height: calc(100vh - 60px); 
+    overflow-y: auto;
+    height: calc(100vh - 70px); /* Ajuste para considerar o header fixo */
     box-sizing: border-box;
+    
 }
 
 .grupos button {
@@ -30,6 +32,8 @@ html, body {
     border: none;
     text-align: left;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
 }
 
 .grupos button:hover {
@@ -41,23 +45,23 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 100vh; 
+    height: calc(100vh - 70px); /* Ajuste para considerar o header fixo */
 }
 
 .conversa-header {
     background-color: #f0f0f0;
     padding: 10px;
     border-bottom: 1px solid #ccc;
-    position: sticky; 
+    position: sticky;
     top: 0;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .mensagens {
     flex: 1;
     padding: 10px;
-    overflow-y: hidden; 
-    margin-bottom: 60px; 
+    overflow-y: auto;
+    margin-bottom: 60px;
 }
 
 .mensagem {
@@ -66,30 +70,32 @@ html, body {
     background-color: #e0e0e0;
     border-radius: 5px;
     word-wrap: break-word;
-    overflow-wrap: break-word; 
+    overflow-wrap: break-word;
     white-space: normal;
-    max-width: 90ch; 
-    width: 100%;  
-    box-sizing: border-box; 
+    max-width: 90ch;
+    box-sizing: border-box;
 }
 
 .input-container {
-    position: fixed; 
+    position: fixed;
     bottom: 0;
     left: 0;
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px);
     padding: 10px;
     background-color: #f0f0f0;
     border-top: 1px solid #ccc;
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
     z-index: 10;
 }
 
 .input-container input {
-    width: calc(100% - 120px); 
+    flex: 1;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .input-container button {
@@ -99,6 +105,12 @@ html, body {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.input-container button:hover {
+    background-color: #555;
 }
 
 body, .mensagem, .grupos button, .conversa-header {
