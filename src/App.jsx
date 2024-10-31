@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import Login from './Login';
-import Header from './Header';
-import Live from './Live';
-import Corridas from './Corridas';
-import VideoPlayer from './VideoPlayer';
-import Loja from './Loja';
-import Comunidade from './Comunidade';
-import Estatisticas from './Estatisticas'; 
-import Inscricao from './Inscricao'; 
+import React, { useEffect, useState } from 'react';
+import { Route, BrowserRouter as Router, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
+import Comunidade from './Comunidade';
+import Corridas from './Corridas';
+import Estatisticas from './Estatisticas';
+import Header from './Header';
+import Inscricao from './Inscricao';
+import Live from './Live';
+import Login from './Login';
+import Loja from './Loja';
+import VideoPlayer from './VideoPlayer';
 import './index.css';
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
 
   const handleProximaPagina = () => {
     console.log("Ir para a próxima página");
-    navigate('/corridas'); 
+    navigate('/corridas');
   };
 
   return (
@@ -44,20 +44,20 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Live />} />
-            <Route 
-              path="/corridas" 
+            <Route
+              path="/corridas"
               element={
-                <Corridas 
-                  corridas={corridas} 
-                  onProximaPagina={handleProximaPagina} 
+                <Corridas
+                  corridas={corridas}
+                  onProximaPagina={handleProximaPagina}
                 />
-              } 
+              }
             />
             <Route path="/corrida/:id" element={<VideoPlayer />} />
             <Route path="/comunidade" element={<Comunidade />} />
             <Route path="/estatisticas" element={<Estatisticas />} />
-            <Route path="/inscricao" element={<Inscricao />} /> {}
-            <Route path="/loja" element={<Loja />} /> {}
+            <Route path="/inscricao" element={<Inscricao />} /> { }
+            <Route path="/loja" element={<Loja />} /> { }
           </Routes>
         </>
       ) : (
