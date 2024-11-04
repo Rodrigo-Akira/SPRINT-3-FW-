@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Corridas.css';
 
-const PaginaCorridas = ({ corridas, onProximaPagina }) => {
+const PaginaCorridas = ({ corridas, onProximaPagina, onPaginaAnterior, paginaAtual, totalPaginas }) => {
     return (
         <div className="pagina-corridas">
             {corridas.length > 0 ? ( 
@@ -25,9 +26,10 @@ const PaginaCorridas = ({ corridas, onProximaPagina }) => {
                 <p>Carregando corridas...</p> 
             )}
             <div className="navegacao-pagina">
-                <button onClick={onProximaPagina}>Próxima Página</button>
+                <button onClick={onPaginaAnterior} disabled={paginaAtual === 1}>Página Anterior</button>
+                <button onClick={onProximaPagina} disabled={paginaAtual === totalPaginas}>Próxima Página</button>
                 <div className="paginacao-info">
-                    Página <span>1</span> de 1
+                    Página <span>{paginaAtual}</span> de {totalPaginas}
                 </div>
             </div>
         </div>

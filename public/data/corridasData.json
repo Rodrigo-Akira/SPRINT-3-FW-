@@ -1,32 +1,162 @@
 [
     {
         "id": 1,
-        "nome": "Grand Prix Monaco",
+        "nome": "ePrix Cidade do México - Round 1 ",
         "link": "/monaco",
         "imagem": "/imagens/cmonaco4.png",
-        "data": "23/05/2024",
+        "data": "13/01/2024",
         "descricao": "A corrida mais famosa de Mônaco.",
         "videoUrl": "", 
-        "videoPath": "/videos/videoplayback.mp4"  
+        "videoPath": "/videos/videomexico.mp4"
     },
     {
         "id": 2,
-        "nome": "Grand Prix Tokyo",
+        "nome": "ePrix Daria - Round 2",
         "link": "/tokyo",
         "imagem": "/imagens/ctokyio.png",
-        "data": "15/06/2024",
+        "data": "25/01/2024",
+        "descricao": "A corrida nas ruas da capital japonesa.",
+        "videoUrl": "",  
+        "videoPath": "/videos/videodaria1.mp4"
+    },
+    {
+        "id": 3,
+        "nome": "ePrix Daria - Round 3",
+        "link": "/londres",
+        "imagem": "/imagens/clondres2.png",
+        "data": "27/01/2024",
+        "descricao": "Corrida nas ruas de Londres.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videodaria2.mp4"  
+    },
+    {
+        "id": 4,
+        "nome": "ePrix São Paulo - Round 4",
+        "link": "/monaco",
+        "imagem": "/imagens/cmonaco4.png",
+        "data": "16/03/2024",
+        "descricao": "A corrida mais famosa de Mônaco.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videosp.mp4"
+    },
+    {
+        "id": 5,
+        "nome": "ePrix Tóquio - Round 5",
+        "link": "/tokyo",
+        "imagem": "/imagens/ctokyio.png",
+        "data": "30/03/2024",
         "descricao": "A corrida nas ruas da capital japonesa.",
         "videoUrl": "",  
         "videoPath": "/videos/videotokyo.mp4"
     },
     {
-        "id": 3,
-        "nome": "Grand Prix Londres",
+        "id": 6,
+        "nome": "ePrix Misano Adriático - Round 6",
         "link": "/londres",
         "imagem": "/imagens/clondres2.png",
-        "data": "01/07/2024",
+        "data": "13/04/2024",
+        "descricao": "Corrida nas ruas de Londres.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videoitalia1.mp4"  
+    },
+    {
+        "id": 7,
+        "nome": "ePrix Misano Adriático - Round 7",
+        "link": "/monaco",
+        "imagem": "/imagens/cmonaco4.png",
+        "data": "14/04/2024",
+        "descricao": "A corrida mais famosa de Mônaco.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videoitalia2.mp4"
+    },
+    {
+        "id": 8,
+        "nome": "ePrix Mônaco - Round 8",
+        "link": "/tokyo",
+        "imagem": "/imagens/ctokyio.png",
+        "data": "27/04/2024",
+        "descricao": "A corrida nas ruas da capital japonesa.",
+        "videoUrl": "",  
+        "videoPath": "/videos/videomonaco.mp4"
+    },
+    {
+        "id": 9,
+        "nome": "ePrix Berlim - Round 9",
+        "link": "/londres",
+        "imagem": "/imagens/clondres2.png",
+        "data": "11/05/2024",
+        "descricao": "Corrida nas ruas de Londres.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videoberlim.mp4"  
+    },
+    {
+        "id": 10,
+        "nome": "ePrix Berlim - Round 10",
+        "link": "/monaco",
+        "imagem": "/imagens/cmonaco4.png",
+        "data": "12/05/2024",
+        "descricao": "A corrida mais famosa de Mônaco.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videoberlim2.mp4"
+    },
+    {
+        "id": 11,
+        "nome": "ePrix Xangai - Round 11",
+        "link": "/tokyo",
+        "imagem": "/imagens/ctokyio.png",
+        "data": "25/05/2024",
+        "descricao": "A corrida nas ruas da capital japonesa.",
+        "videoUrl": "",  
+        "videoPath": "/videos/videochina.mp4"
+    },
+    {
+        "id": 12,
+        "nome": "ePrix Xangai - Round 12",
+        "link": "/londres",
+        "imagem": "/imagens/clondres2.png",
+        "data": "26/05/2024",
+        "descricao": "Corrida nas ruas de Londres.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videochina2.mp4"  
+    },
+    {
+        "id": 13,
+        "nome": "ePrix Portland - Round 13",
+        "link": "/monaco",
+        "imagem": "/imagens/cmonaco4.png",
+        "data": "29/06/2024",
+        "descricao": "A corrida mais famosa de Mônaco.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videoeua.mp4"
+    },
+    {
+        "id": 14,
+        "nome": "ePrix Portland - Round 14",
+        "link": "/tokyo",
+        "imagem": "/imagens/ctokyio.png",
+        "data": "30/06/2024",
+        "descricao": "A corrida nas ruas da capital japonesa.",
+        "videoUrl": "",  
+        "videoPath": "/videos/videoeua2.mp4"
+    },
+    {
+        "id": 15,
+        "nome": "ePrix Londres - Round 15",
+        "link": "/londres",
+        "imagem": "/imagens/clondres2.png",
+        "data": "20/07/2024",
         "descricao": "Corrida nas ruas de Londres.",
         "videoUrl": "", 
         "videoPath": "/videos/videolondres.mp4"  
+    },
+    {
+        "id": 16,
+        "nome": "ePrix Londres - Round 16",
+        "link": "/londres",
+        "imagem": "/imagens/clondres2.png",
+        "data": "21/07/2024",
+        "descricao": "Corrida nas ruas de Londres.",
+        "videoUrl": "", 
+        "videoPath": "/videos/videolondres2.mp4"  
     }
 ]

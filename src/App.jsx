@@ -15,6 +15,8 @@ import './index.css';
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [corridas, setCorridas] = useState([]);
+  const [paginaAtual, setPaginaAtual] = useState(1);
+  const ITEMS_PER_PAGE = 4; // Número de corridas por página
 
   const handleLogin = (email, password) => {
     console.log('Autenticado com:', email, password);
@@ -30,12 +32,23 @@ const App = () => {
     }
   }, [isAuthenticated]);
 
-  const navigate = useNavigate();
-
   const handleProximaPagina = () => {
-    console.log("Ir para a próxima página");
-    navigate('/corridas');
+    const totalPaginas = Math.ceil(corridas.length / ITEMS_PER_PAGE);
+    if (paginaAtual < totalPaginas) {
+      setPaginaAtual(paginaAtual + 1);
+    }
   };
+
+  const handlePaginaAnterior = () => {
+    if (paginaAtual > 1) {
+      setPaginaAtual(paginaAtual - 1);
+    }
+  };
+
+  const corridasFiltradas = corridas.slice(
+    (paginaAtual - 1) * ITEMS_PER_PAGE,
+    paginaAtual * ITEMS_PER_PAGE
+  );
 
   return (
     <div className="app-container">
@@ -48,16 +61,19 @@ const App = () => {
               path="/corridas"
               element={
                 <Corridas
-                  corridas={corridas}
+                  corridas={corridasFiltradas}
                   onProximaPagina={handleProximaPagina}
+                  onPaginaAnterior={handlePaginaAnterior}
+                  paginaAtual={paginaAtual}
+                  totalPaginas={Math.ceil(corridas.length / ITEMS_PER_PAGE)}
                 />
               }
             />
             <Route path="/corrida/:id" element={<VideoPlayer />} />
             <Route path="/comunidade" element={<Comunidade />} />
             <Route path="/estatisticas" element={<Estatisticas />} />
-            <Route path="/inscricao" element={<Inscricao />} /> { }
-            <Route path="/loja" element={<Loja />} /> { }
+            <Route path="/inscricao" element={<Inscricao />} />
+            <Route path="/loja" element={<Loja />} />
           </Routes>
         </>
       ) : (
