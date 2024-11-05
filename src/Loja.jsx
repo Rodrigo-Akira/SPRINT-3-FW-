@@ -5,49 +5,49 @@ const produtos = [
   {
     id: 1,
     nome: 'Ingresso GP Interlagos',
-    imagem: './public/imagens/bilhete.png',
+    imagem: './imagens/bilhete.png',
     preco: '42 mil pontos',
   },
   {
     id: 2,
     nome: 'Boné Mahindra',
-    imagem: '/public/imagens/Boné.png',
+    imagem: '/imagens/Boné.png',
     preco: '3 mil pontos',
   },
   {
     id: 3,
     nome: 'Chaveiro Mahindra',
-    imagem: '/public/imagens/Chaveiro.png',
+    imagem: '/imagens/Chaveiro.png',
     preco: '700 pontos',
   },
   {
     id: 4,
     nome: 'Conhecer Pit Mahindra',
-    imagem: '/public/imagens/bilhete.png',
+    imagem: '/imagens/bilhete.png',
     preco: '54 mil pontos',
   },
   {
     id: 5,
     nome: 'Garrafa Mahindra',
-    imagem: '/public/imagens/Garrafa.png',
+    imagem: '/imagens/Garrafa.png',
     preco: '2.500 pontos',
   },
   {
     id: 6,
     nome: 'Camiseta Mahindra',
-    imagem: '/public/imagens/Camiseta.png',
+    imagem: '/imagens/Camiseta.png',
     preco: '4.200 pontos',
   }, 
   {
     id: 7,
     nome: 'Miniatura Mahindra',
-    imagem: '/public/imagens/Miniatura.png',
+    imagem: '/imagens/Miniatura.png',
     preco: '3.500 pontos',
   },
   {
     id: 8,
     nome: 'Corta Vento Mahindra',
-    imagem: '/public/imagens/Corta Vento.png',
+    imagem: '/imagens/Corta Vento.png',
     preco: '7.000 pontos',
   }
 ];

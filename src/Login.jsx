@@ -25,7 +25,7 @@ const handleSubmit = (e) => {
     <div className="login-container">
     <form onSubmit={handleSubmit}>
     <div className="logo-container">
-        <img src="/public/imagens/logo-Branco.png" alt="Logo" className="login-logo" />
+        <img src="/imagens/logo-Branco.png" alt="Logo" className="login-logo" />
         </div>
         <h2>Entrar</h2>
         {errorMessage && <p className="error">{errorMessage}</p>}
