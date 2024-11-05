@@ -17,7 +17,7 @@ const produtos = [
   {
     id: 3,
     nome: 'Chaveiro Mahindra',
-    imagem: './imagens/Chaveiro.png',
+    imagem: '/imagens/chaveiro.ofc.png',
     preco: '700 pontos',
   },
   {
