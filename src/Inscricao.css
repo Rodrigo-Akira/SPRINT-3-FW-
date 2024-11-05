@@ -1,87 +1,108 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: #000; 
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .inscricao-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    color: #fff;
-  }
-  
-  .inscrever-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .inscrever-button:hover {
-    background-color: #555;
-  }
-  
-  .form-container {
-    background-color: #222;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  }
-  
-  h2 {
-    color: #fff;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 5px;
-    color: #fff;
-  }
-  
-  input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .submit-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: #45a049;
-  }
-  
-  .cookie-notification {
-    background-color: #4CAF50; 
-    color: #fff; 
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inscricao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.inscrever-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inscrever-button:hover {
+  background-color: #555;
+}
+
+.form-container {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.submit-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.cookie-notification {
+  background-color: #4CAF50; 
+  color: #fff; 
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-redirect {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.login-redirect span {
+  color: #4CAF50;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.login-link {
+  color: #4CAF50;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: #45a049;
+}

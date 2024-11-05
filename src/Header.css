@@ -67,3 +67,8 @@ html, body {
     object-fit: contain; 
     margin-left: 120px;
 }
+
+.profile-container {
+    cursor: pointer;
+
+}
