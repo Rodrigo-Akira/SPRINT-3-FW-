@@ -12,8 +12,8 @@ const VideoPlayer = () => {
 
     return (
         <div className="video-player-container">
-            <h1>{corrida.nome}</h1>
-
+            <h1 style={{ color: "#ffffff" }}>{corrida.nome}</h1> {}
+            
             {corrida.videoUrl ? (
                 <iframe
                     width="100%"
@@ -25,18 +25,17 @@ const VideoPlayer = () => {
                     allowFullScreen
                 ></iframe>
             ) : corrida.videoPath ? (
-                
                 <video width="100%" height="500px" controls>
                     <source src={corrida.videoPath} type="video/mp4" />
                     Seu navegador não suporta a reprodução de vídeos.
                 </video>
             ) : (
-                <p>Vídeo não disponível.</p>
+                <p style={{ color: "#ffffff" }}>Vídeo não disponível.</p>
             )}
-
-            <p>{corrida.descricao}</p>
+    
+            <p style={{ color: "#ffffff" }}>{corrida.descricao}</p>
         </div>
-    );
+    );    
 };
 
 export default VideoPlayer;
