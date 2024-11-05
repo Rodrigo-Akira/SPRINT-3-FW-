@@ -10,18 +10,15 @@ html, body {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
-    padding-top: 100px; /* Aumente esse valor se o header for mais alto */
-    overflow: hidden;
 }
 
 .grupos {
     flex: 1;
     background-color: #e0e0e0;
-    padding: 10px;
+    padding-top:120px;
     overflow-y: auto;
-    height: calc(100vh - 70px); /* Ajuste para considerar o header fixo */
+    height: 100vh; 
     box-sizing: border-box;
-    
 }
 
 .grupos button {
@@ -45,7 +42,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: calc(100vh - 70px); /* Ajuste para considerar o header fixo */
+    height: 100vh; 
 }
 
 .conversa-header {
@@ -55,29 +52,18 @@ html, body {
     position: sticky;
     top: 0;
     z-index: 10;
+    padding-top: 40px;
 }
 
 .mensagens {
     flex: 1;
-    padding: 10px;
-    overflow-y: auto;
-    margin-bottom: 60px;
-}
-
-.mensagem {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    max-width: 90ch;
-    box-sizing: border-box;
+    padding-left: 25px;
+    overflow-y: auto; 
+    margin-bottom: 10px; 
 }
 
 .input-container {
-    position: fixed;
+    position: relative; 
     bottom: 0;
     left: 0;
     width: calc(100% - 20px);
@@ -111,6 +97,18 @@ html, body {
 
 .input-container button:hover {
     background-color: #555;
+}
+
+.mensagem {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 90ch;
+    box-sizing: border-box;
 }
 
 body, .mensagem, .grupos button, .conversa-header {

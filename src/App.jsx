@@ -16,8 +16,7 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [corridas, setCorridas] = useState([]);
   const [paginaAtual, setPaginaAtual] = useState(1);
-  const ITEMS_PER_PAGE = 4; // Número de corridas por página
-
+  const ITEMS_PER_PAGE = 4; 
   const handleLogin = (email, password) => {
     console.log('Autenticado com:', email, password);
     setIsAuthenticated(true);
