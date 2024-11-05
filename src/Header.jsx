@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <header className="header">
       <img 
-        src="/public/imagens/logo-Branco.png" 
+        src="/imagens/logo-Branco.png" 
         alt="Logo" 
         className="Logo" 
         onClick={handleLiveClick} 

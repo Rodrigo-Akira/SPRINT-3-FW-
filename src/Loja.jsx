@@ -5,7 +5,7 @@ const produtos = [
   {
     id: 1,
     nome: 'Ingresso GP Interlagos',
-    imagem: '/public/imagens/bilhete.png',
+    imagem: './public/imagens/bilhete.png',
     preco: '42 mil pontos',
   },
   {
